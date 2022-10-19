@@ -2,6 +2,8 @@
 'https://plantuml.com/class-diagram
 !include style.puml
 
+package Pupilist <<Rectangle>> {
+
 package Model  {
     Class SessionList #red
     Class Session #red
@@ -18,5 +20,6 @@ SessionCommand --down-> "1"Session
 SessionList -right-> "0...*"Session #red
 EditPersonDescriptor --down->"0..1" Session
 
+}
 
 @enduml
