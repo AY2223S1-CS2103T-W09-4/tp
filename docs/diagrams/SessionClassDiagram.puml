@@ -16,9 +16,9 @@ package Logic <<Rectangle>> {
     Class SessionCommand
 }
 
-SessionCommand --down-> "1"Session
-SessionList -right-> "0...*"Session #red
-EditPersonDescriptor --down->"0..1" Session
+SessionCommand ----down-> "  1" Session:"    "
+SessionList -right-> "0...*" Session
+EditPersonDescriptor --down->"0...1" Session
 
 }
 
